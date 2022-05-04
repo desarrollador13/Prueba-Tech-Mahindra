@@ -1,0 +1,5 @@
+package com.BackendTech.dto;
+
+public class UsuarioResponseDto {
+
+}

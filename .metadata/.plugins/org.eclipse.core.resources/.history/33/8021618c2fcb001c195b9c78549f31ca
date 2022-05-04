@@ -1,0 +1,31 @@
+package com.BackendTech.impl;
+
+import com.BackendTech.dto.UsuarioRequestDto;
+import com.BackendTech.exceptions.CustomRuntimeException;
+import com.BackendTech.exceptions.LocationException;
+import com.BackendTech.exceptions.MessageException;
+import com.BackendTech.servicio.IUsuarioServicio;
+
+public class UsuarioServicioImpl implements IUsuarioServicio{
+
+	@Override
+	public String crearUsuario(UsuarioRequestDto usuario) {
+		
+		if(!camposValidos(usuario)) {
+			throw new CustomRuntimeException("No es posible crear Activos. " + e.getMessage());
+		}
+		return null;
+	}
+	
+	public Boolean camposValidos(UsuarioRequestDto usuario) {
+		
+		if(usuario.getIdentificacion().isEmpty()) return false;
+		if(usuario.getNombres().isEmpty()) return false;
+		if(usuario.getApellidos().isEmpty()) return false;
+		if(usuario.getTipoIdentificacion().isEmpty()) return false;
+		if(usuario.getUsuario().isEmpty()) return false;
+		
+		return true;
+	}
+
+}

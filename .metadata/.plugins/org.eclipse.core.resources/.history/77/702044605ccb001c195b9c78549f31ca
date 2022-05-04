@@ -1,0 +1,5 @@
+package com.BackendTech.util;
+
+public interface IRestUtil {
+
+}

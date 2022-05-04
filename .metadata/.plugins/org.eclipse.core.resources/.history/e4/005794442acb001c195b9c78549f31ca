@@ -1,0 +1,7 @@
+package com.BackendTech.servicio;
+
+public interface IUsuarioServicio {
+	
+	String crearActivo(ActivoBodyDto body);
+	
+}

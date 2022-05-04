@@ -1,0 +1,29 @@
+package com.BackendTech;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.BackendTech.controlador.TareasControlador;
+import com.BackendTech.dto.GeneralResponseDto;
+import com.BackendTech.dto.TareaRequestDto;
+import com.BackendTech.exceptions.LocationException;
+import com.BackendTech.exceptions.MessageException;
+import com.BackendTech.servicio.ITareasServicio;
+
+@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
+public class UsuariosControladorTests {
+	
+	@Mock
+	private ITareasServicio tareasServicio;
+	@InjectMocks
+	private TareasControlador tareasControlador;
+
+}

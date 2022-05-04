@@ -1,0 +1,32 @@
+package com.BackendTech.controlador;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.BackendTech.constante.Endpoint;
+import com.BackendTech.dto.GeneralResponseDto;
+import com.BackendTech.dto.UsuarioRequestDto;
+import com.BackendTech.servicio.IUsuarioServicio;
+
+@CrossOrigin(origins = "*")
+@RestController
+@RequestMapping(Endpoint.USERS)
+public class UsuariosControlador {
+	
+	@Autowired
+	private IUsuarioServicio usuarioServicio;
+
+	@PostMapping
+	//ResponseEntity<ActivosDto>
+	public ResponseEntity<GeneralResponseDto> filtrosActivos(
+			@RequestBody UsuarioRequestDto usuario) {
+		usuarioServicio.crearUsuario(usuario);
+		return "";
+	}
+}

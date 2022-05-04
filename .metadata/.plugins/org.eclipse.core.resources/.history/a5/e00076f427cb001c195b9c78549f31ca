@@ -1,0 +1,14 @@
+package com.BackendTech.dto;
+
+import java.io.Serializable;
+
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+public class UsuarioRequestDto implements Serializable{
+
+}

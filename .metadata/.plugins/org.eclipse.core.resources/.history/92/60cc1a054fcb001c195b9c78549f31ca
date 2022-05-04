@@ -1,0 +1,9 @@
+package com.BackendTech.repositorio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.BackendTech.modelo.TareaEntidad;
+
+public interface TareaRepositorio extends JpaRepository<TareaEntidad, Long>{
+
+}

@@ -1,0 +1,9 @@
+package com.BackendTech.util;
+
+public interface IRestUtil {
+
+	default Notificacion confirmarRespuesta(String mensajeConfirmacion) {
+		 return Notificacion.builder().descripcion(mensajeConfirmacion).build();
+	 }
+	
+}

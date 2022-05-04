@@ -1,0 +1,37 @@
+package com.BackendTech;
+
+import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
+
+import com.BackendTech.controlador.TareasControlador;
+import com.BackendTech.servicio.ITareasServicio;
+
+@RunWith(MockitoJUnitRunner.class)
+public class TareasControladorTests {
+	
+	@Mock
+	private ITareasServicio tareasServicio;
+	
+	@InjectMocks
+	private TareasControlador tareasControlador;
+	
+	
+	@SuppressWarnings("deprecation")
+	@BeforeEach
+	public void setUp() {
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	@Test
+	public void guardarDatosTareas() {
+		String  idUsuario = "1";
+		String nombreTarea = "tarea 1";
+		
+	}
+
+}

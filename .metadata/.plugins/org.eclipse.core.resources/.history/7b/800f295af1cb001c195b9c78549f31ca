@@ -1,0 +1,21 @@
+package com.BackendTech.repositorio;
+
+import javax.persistence.Entity;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.stereotype.Repository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Repository
+@Slf4j
+public class UsuarioRepositorioCustomImpl {
+	
+	@PersistenceContext
+	private Entity em;
+	
+	public listarUsuarios() {
+		
+	}
+
+}

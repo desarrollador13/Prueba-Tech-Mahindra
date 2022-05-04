@@ -1,0 +1,5 @@
+package com.BackendTech.modelo;
+
+public class TareaEntidad {
+
+}

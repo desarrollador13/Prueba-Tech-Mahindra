@@ -1,0 +1,31 @@
+package com.BackendTech.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.BackendTech.dto.GeneralResponseDto;
+import com.BackendTech.dto.TareaRequestDto;
+import com.BackendTech.dto.UsuarioRequestDto;
+import com.BackendTech.exceptions.LocationException;
+import com.BackendTech.exceptions.MessageException;
+import com.BackendTech.servicio.ITareasServicio;
+
+@Service
+public class TareaServicioImpl implements ITareasServicio{
+
+	@Override
+	public GeneralResponseDto crearTarea(TareaRequestDto tarea) throws MessageException, LocationException {
+		if(!camposValidos(tarea)) {
+			System.out.println("Entro aca !");
+			throw new MessageException("Todos los campos son obligatorios");
+		}
+		return null;
+	}
+	
+    public Boolean camposValidos(TareaRequestDto tarea) {
+		
+		if(tarea.getIdUsuario().isEmpty()) return false;
+		if(tarea.getNombreTarea().isEmpty()) return false;
+		return true;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.BackendTech.impl;
+
+import com.BackendTech.servicio.IUsuarioServicio;
+
+public class UsuarioServicioImpl implements IUsuarioServicio{
+
+}

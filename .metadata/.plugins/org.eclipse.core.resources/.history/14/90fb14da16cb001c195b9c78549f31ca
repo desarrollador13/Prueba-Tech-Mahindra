@@ -1,0 +1,5 @@
+package com.BackendTech.repositorio;
+
+public interface UsuarioRepositorio {
+
+}

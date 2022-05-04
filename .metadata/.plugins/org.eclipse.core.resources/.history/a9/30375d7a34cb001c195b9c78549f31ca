@@ -1,0 +1,7 @@
+package com.BackendTech.dto;
+
+import java.io.Serializable;
+
+public class GeneralResponseDto implements Serializable{
+
+}

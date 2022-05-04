@@ -1,0 +1,19 @@
+package com.BackendTech;
+
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+
+import com.BackendTech.servicio.ITareasServicio;
+
+@RunWith(MockitoJUnitRunner.class)
+public class TareasControladorTests {
+	
+	@Mock
+	private ITareasServicio tareasServicio;
+	
+	@InjectMocks
+	private TareasControlador tareasControlador;
+
+}

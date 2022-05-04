@@ -1,0 +1,27 @@
+package com.BackendTech.modelo;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "Usuario")
+public class UsuarioEntidad implements Serializable{
+	
+	private static final long serialVersionUID = -6128077463400689472L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Usuario_1")
+
+}

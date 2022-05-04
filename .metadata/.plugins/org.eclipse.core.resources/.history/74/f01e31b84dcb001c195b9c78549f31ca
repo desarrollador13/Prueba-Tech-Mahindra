@@ -1,0 +1,5 @@
+package com.BackendTech.impl;
+
+public class TareaServicioImpl implements ITareasServicio{
+
+}

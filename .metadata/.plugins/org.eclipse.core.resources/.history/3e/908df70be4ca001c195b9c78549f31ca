@@ -1,0 +1,8 @@
+package com.BackendTech.controlador;
+
+
+@CrossOrigin(origins = "*")
+@RestController
+public class UsuariosControlador {
+
+}

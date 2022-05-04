@@ -1,0 +1,15 @@
+package com.BackendTech.dto;
+
+import java.io.Serializable;
+
+public class Notificacion implements Serializable{
+	
+private static final long serialVersionUID = -304219380544335013L;
+	
+	private String codigo;
+	
+	private String descripcion;
+	
+	private String recurso;
+
+}

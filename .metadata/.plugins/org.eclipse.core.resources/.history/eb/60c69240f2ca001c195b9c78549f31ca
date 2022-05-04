@@ -1,0 +1,35 @@
+package com.BackendTech.modelo;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
+
+public class TareaEntidad implements Serializable{
+	
+	private static final long serialVersionUID = -6128077463400689472L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Tarea_1")
+	@SequenceGenerator(name = "Tarea_1", sequenceName = "Tarea", allocationSize = 1)
+	@Column(name = "IdTarea")
+	private Long IdTarea;
+	@Column(name = "IdUsuario")
+	private Long IdUsuario;
+	@Column(name = "NombreTarea")
+	private String NombreTarea;
+	@Column(name = "Observacion")
+	private String Observacion;
+	@Column(name = "FechaCreacion")
+	private Date FechaCreacion;
+	
+	@ManyToOne
+	@JoinColumn(name = "IdUsuario", referencedColumnName = "OTSI_OTSI", insertable = false, updatable = false, nullable = true)
+	private UsuarioEntidad otrosi;
+
+}

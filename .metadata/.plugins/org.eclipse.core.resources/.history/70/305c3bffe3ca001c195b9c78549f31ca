@@ -1,0 +1,7 @@
+package com.BackendTech.constante;
+
+
+@Builder
+public class Endpoint {
+
+}

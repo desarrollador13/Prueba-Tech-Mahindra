@@ -1,0 +1,11 @@
+package com.BackendTech.util;
+
+import com.BackendTech.dto.Notificacion;
+
+public interface IRestUtil {
+
+	default Notificacion confirmarRespuesta(String mensajeConfirmacion) {
+		 return Notificacion.builder().descripcion(mensajeConfirmacion).build();
+	 }
+	
+}

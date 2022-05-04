@@ -1,0 +1,11 @@
+package com.BackendTech.exceptions;
+
+public class CustomRuntimeException extends RuntimeException{
+	
+	private static final long serialVersionUID = 1L;
+	
+	public CustomRuntimeException(String... exceptionMsg) {
+		super(llenarMensaje(exceptionMsg));
+	}
+
+}

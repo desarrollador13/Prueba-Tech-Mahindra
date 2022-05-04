@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BackendTech" project="BackendTech" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.BackendTech.UsuariosControladorTests" time="0.009" displayname="UsuariosControladorTests" uniqueid="[engine:junit-jupiter]/[class:com.BackendTech.UsuariosControladorTests]">
+    <testcase name="guardarDatosUsuario" classname="com.BackendTech.UsuariosControladorTests" time="0.009" displayname="guardarDatosUsuario()" uniqueid="[engine:junit-jupiter]/[class:com.BackendTech.UsuariosControladorTests]/[method:guardarDatosUsuario()]"/>
+  </testsuite>
+  <testsuite name="com.BackendTech.TareasControladorTests" time="0.026" displayname="TareasControladorTests" uniqueid="[engine:junit-jupiter]/[class:com.BackendTech.TareasControladorTests]">
+    <testcase name="guardarDatosTareas" classname="com.BackendTech.TareasControladorTests" time="0.026" displayname="guardarDatosTareas()" uniqueid="[engine:junit-jupiter]/[class:com.BackendTech.TareasControladorTests]/[method:guardarDatosTareas()]"/>
+  </testsuite>
+  <testsuite name="com.BackendTech.BackendTechApplicationTests" time="0.009" displayname="BackendTechApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.BackendTech.BackendTechApplicationTests]">
+    <testcase name="contextLoads" classname="com.BackendTech.BackendTechApplicationTests" time="0.009" displayname="contextLoads()" uniqueid="[engine:junit-jupiter]/[class:com.BackendTech.BackendTechApplicationTests]/[method:contextLoads()]"/>
+  </testsuite>
+</testrun>

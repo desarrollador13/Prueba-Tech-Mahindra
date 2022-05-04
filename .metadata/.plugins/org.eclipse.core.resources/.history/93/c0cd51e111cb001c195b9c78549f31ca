@@ -1,0 +1,5 @@
+package com.BackendTech.config;
+
+public class BackendTechConfiguracion extends WsConfigurationSupport{
+
+}
